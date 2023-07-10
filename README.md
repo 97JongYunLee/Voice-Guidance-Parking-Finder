@@ -6,7 +6,7 @@
 * 10th generation Intel® CoreTM processor onwards
 * At least 32GB RAM
 * Python 3.9.13
-* 
+  
 ## Clone code
 
 * (Code clone 방법에 대해서 기술)
