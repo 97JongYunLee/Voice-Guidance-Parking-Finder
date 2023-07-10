@@ -3,15 +3,10 @@
 주차장의 남은공간을 detecting 하여 주차장의 남은공간을 음성으로 알려주는 역할.
 
 ## Requirement
-
-* (프로젝트를 실행시키기 위한 최소 requirement들에 대해 기술)
-
-```
 * 10th generation Intel® CoreTM processor onwards
 * At least 32GB RAM
 * Python 3.9.13
-```
-
+* 
 ## Clone code
 
 * (Code clone 방법에 대해서 기술)
@@ -54,30 +49,26 @@ omz_converter --name vehicle-detection-0202
 
 * (프로젝트를 실행을 위해 빌드 절차 기술)
 
-```shell
-cd ~/xxxx
-.venv/Scripts/activate
-cd open_model_zoo/demos/text_to_speech_demo/python/
-make
-make install
-```
+
 
 ## Steps to run
 
 * (프로젝트 실행방법에 대해서 기술, 특별한 사용방법이 있다면 같이 기술)
 
-```shell
-cd ~/xxxx
-source .venv/bin/activate
+```shell 
+.venv/bin/activate
 
-cd /path/to/repo/xxx/
-python demo.py -i xxx -m yyy -d zzz
+cd open_model_zoo/demos/text_to_speech_demo/python
+python parking.py
 ```
 
 ## Output
 
-![./images/result.jpg](./images/result.jpg)
+
+![test_0706_reuslt](https://github.com/97JongYunLee/Voice-Guidance-Parking-Finder/assets/139088562/37b53368-0709-4a63-b311-3b4c309f3db8)
+
+
+
 
 ## Appendix
 
-* (참고 자료 및 알아두어야할 사항들 기술)
