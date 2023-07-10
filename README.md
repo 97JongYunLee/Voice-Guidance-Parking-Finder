@@ -1,7 +1,6 @@
-# Project name
+# Voice-Guidance-Parking-Finder
 
-* (간략히 전체 프로젝트를 설명하고, 최종 목표가 무엇인지에 대해 기술)
-* 주차장의 남은공간을 count하여,남은공간에 대한 정보를 txt파일로 저장후 voice로 출력
+주차장의 남은공간을 detecting 하여 주차장의 남은공간을 음성으로 알려주는 역할.
 
 ## Requirement
 
@@ -27,16 +26,29 @@ git clone https://github.com/zzz/yyy/xxxx
 
 ```shell
 python -m venv .venv
-source .venv/Scripts/activate
+.venv/Scripts/activate
 
 python -m pip install -U pip
 python -m pip install wheel
 
 python -m pip install openvino-dev
+git clone --recurse-submodules https://github.com/openvinotoolkit/open_model_zoo.git
 
-cd /path/to/repo/xxx/
+cd open_model_zoo
 python -m pip install -r requirements.txt
-```
+
+cd open_model_zoo/demos/text_to_speech_demo/python
+omz_downloader --name text-to-speech-en-0001-duration-prediction
+omz_downloader --name text-to-speech-en-0001-generation
+omz_downloader --name text-to-speech-en-0001-regression
+omz_converter --name text-to-speech-en-0001-duration-prediction
+omz_converter --name text-to-speech-en-0001-generation
+omz_converter --name text-to-speech-en-0001-regression
+
+cd open_model_zoo/demos/object_detection_demo/python
+omz_downloader --name vehicle-detection-0202
+omz_converter --name vehicle-detection-0202
+
 
 ## Steps to build
 
@@ -44,8 +56,8 @@ python -m pip install -r requirements.txt
 
 ```shell
 cd ~/xxxx
-source .venv/bin/activate
-
+.venv/Scripts/activate
+cd open_model_zoo/demos/text_to_speech_demo/python/
 make
 make install
 ```
