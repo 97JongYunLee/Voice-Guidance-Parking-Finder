@@ -12,7 +12,7 @@
 * (Code clone 방법에 대해서 기술)
 
 ```shell
-git clone https://github.com/zzz/yyy/xxxx
+git clone https://github.com/97JongYunLee/Voice-Guidance-Parking-Finder.git
 ```
 
 ## Prerequite
@@ -64,7 +64,6 @@ python parking.py
 
 ## Output
 
-
 ![test_0706_reuslt](https://github.com/97JongYunLee/Voice-Guidance-Parking-Finder/assets/139088562/37b53368-0709-4a63-b311-3b4c309f3db8)
 
 
@@ -72,3 +71,5 @@ python parking.py
 
 ## Appendix
 
+* 본 프로젝트는 첨부된 이미지파일로만 사용가능.
+* 다른 이미지파일로 실행하려면 코드수정 필요
