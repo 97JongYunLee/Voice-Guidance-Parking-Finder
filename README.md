@@ -1,6 +1,7 @@
 # Project name
 
 * (간략히 전체 프로젝트를 설명하고, 최종 목표가 무엇인지에 대해 기술)
+* 주차장의 남은공간을 count하여,남은공간에 대한 정보를 txt파일로 저장후 voice로 출력
 
 ## Requirement
 
@@ -9,8 +10,7 @@
 ```
 * 10th generation Intel® CoreTM processor onwards
 * At least 32GB RAM
-* Ubuntu 22.04
-* Python 3.9
+* Python 3.9.13
 ```
 
 ## Clone code
@@ -27,7 +27,7 @@ git clone https://github.com/zzz/yyy/xxxx
 
 ```shell
 python -m venv .venv
-source .venv/bin/activate
+source .venv/Scripts/activate
 
 python -m pip install -U pip
 python -m pip install wheel
